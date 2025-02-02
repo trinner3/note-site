@@ -321,16 +321,14 @@ label input:checked ~ span {
     }
 
     [name=note] {
-        width: 43%;
-        max-width: 90%;
-        margin: 12px 12px;
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .note-title,
     .note-content {
-        width: 100%;
+        width: 90%;
     }
 
     .submit-button {
@@ -340,5 +338,12 @@ label input:checked ~ span {
     .notification {
         width: 90%;
         right: 5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .note-title,
+    .note-content {
+        width: 90%;
     }
 }
