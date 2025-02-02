@@ -1,0 +1,344 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 1px 3px 0 rgba(11, 12, 13, 0.16), 0 0 1px 0 rgba(11, 12, 13, 0.24);
+    padding: 18px 64px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    color: #000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count-block {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.notes-icon {
+    padding-right: 12px;
+}
+
+.note-form {
+    border-radius: 4px;
+    padding: 24px;
+    width: 90%;
+    max-width: 1152px;
+    height: auto;
+    box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    margin: 0 auto 24px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: #919191;
+}
+
+.title-div {
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.note-title {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 6px 12px;
+    width: 100%;
+    height: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+}
+
+.content-color-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.content-div {
+    width: 70%;
+    height: auto;
+    margin-right: 24px;
+}
+
+.color-div {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-content {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 6px 12px;
+    width: 100%;
+    height: 84px;
+    font-size: 14px;
+    line-height: 1.71429;
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+}
+
+fieldset {
+    all: unset;
+    width: 100%;
+    height: auto;
+    margin: 0 0 12px 0;
+}
+
+.radio-list {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.color-button {
+    appearance: none;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: green;
+    cursor: pointer;
+}
+
+.color-button[value="red"] {
+    background-color: #F37D7D;
+}
+
+.color-button[value="green"] {
+    background-color: #C2F37D;
+}
+
+.color-button[value="blue"] {
+    background-color: #7DE1F3;
+}
+
+.color-button[value="yellow"] {
+    background-color: #F3DB7D;
+}
+
+.color-button[value="purple"] {
+    background-color: #E77DF3;
+}
+
+.color-button:checked {
+    border-color: white;
+    box-shadow: 0 0 0 3px white, 0 0 0 4.5px #007BFF;
+}
+
+.submit-button {
+    background: #457cdc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 10px;
+    padding: 6px 24px;
+    width: 100%;
+    max-width: 232px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 64px;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+label span {
+    display: inline-flex;
+    padding: 10px 30px;
+    background: url(images/icons/checkbox-inactive.png) no-repeat left center;
+}
+label input:checked ~ span {
+    background: url(images/icons/checkbox-active.png) no-repeat left center;
+}
+
+.messages-box {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 138px;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+[name=note] {
+    margin: 12px;
+    border-radius: 10px;
+    padding: 12px 0 0 0;
+    width: 100%;
+    max-width: 368px;
+    max-height: 216px;
+    text-wrap: pretty;
+    box-shadow: 0 4px 8px 0 rgba(11, 12, 13, 0.08), 0 8px 16px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.favorite-button,
+.delete-button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.content {
+    padding: 12px;
+    background: #fff;
+    width: 100%;
+    max-height: 168px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 12px 24px;
+    width: 230px;
+    height: 48px;
+    box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    background: #47b27d;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    animation: fade 3s;
+}
+
+.notification.warning {
+    box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    background: #f23d5b;
+    width: 100%;
+    max-width: 427px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .note-form {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .content-color-div {
+        flex-direction: column;
+    }
+
+    .content-div {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .color-div {
+        width: 100%;
+    }
+
+    .notes-list {
+        justify-content: center;
+    }
+
+    [name=note] {
+        width: 100%;
+        max-width: 100%;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .note-title,
+    .note-content {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .notification {
+        width: 90%;
+        right: 5%;
+    }
+}
